@@ -13,6 +13,9 @@ pub fn main() void {
         // dots are used for initialize values
     };
 
+    // call diagnose on user
+    new_user.diagnose();
+
     std.debug.print("{s}'s power is {d}\n'", .{ new_user.name, new_user.power });
 
     const sum = add(8999, 2);
