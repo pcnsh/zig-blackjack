@@ -14,4 +14,14 @@ pub fn main() void {
     };
 
     std.debug.print("{s}'s power is {d}\n'", .{ new_user.name, new_user.power });
+
+    const sum = add(8999, 2);
+    std.debug.print("8999 + 2 = {d}\n", .{sum});
+}
+
+fn add(a: i64, b: i64) i64 {
+    // cant use a+=b
+    // return a;
+    // because function parameters are constants.
+    return a + b;
 }
